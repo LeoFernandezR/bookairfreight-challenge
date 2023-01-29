@@ -1,3 +1,12 @@
+
+/* Border box reset*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 :root {
   --light-blue: #3898EC;
   --dark-blue: #4129C7;

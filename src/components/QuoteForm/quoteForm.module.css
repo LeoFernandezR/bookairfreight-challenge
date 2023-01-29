@@ -11,17 +11,30 @@
 
 .form > div > input, .form > div > select {
   display: block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .form > div > input, .form > div > select {
+    width: auto;
+  }
 }
 
 .form > button {
   border: none;
   border-radius: 3px; /* Added border radius to match demo */
-  width: fit-content; /* If i fixed it to 100px the text does not fit */
+  width: 100%; 
   margin-bottom: 10px;
   padding: 10px;
   background-color: var(--light-blue);
   color: #FFFFFF;
   font-size: 14px; /* font size was not provided so i set it to 14px in order to get the button width approx to 100px */
+}
+
+@media only screen and (min-width: 600px) {
+  .form > button {
+    width: fit-content; /* If i fixed it to 100px the text does not fit */
+  }
 }
 
 /* Errors */

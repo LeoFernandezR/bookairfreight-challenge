@@ -1,5 +1,12 @@
 .section {
   display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+  .section {
+    flex-direction: row;
+  }
 }
 
 .icon {
@@ -22,6 +29,13 @@
   padding: 4px; /* I added this little bit of spacing in order to match how the demo looks*/
   font-weight: 400;
   gap: 4px; /* added spacing between the icon and the title to match the demo*/
+  justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .deliveryChannel > h4 {
+    justify-content: flex-start;
+  }
 }
 
 .deliveryRange {
@@ -56,10 +70,20 @@
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  border-top: 1px solid black;
+  border-top: none;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
+  border-left: 1px solid black;
 }
+
+@media only screen and (min-width: 600px) {
+  .deliveryDetails {
+    border-top: 1px solid black;
+  border-left: none;
+
+  }
+}
+
 
 .deliveryDetails > div {
   border-bottom: 1px solid black;
@@ -88,4 +112,12 @@
   text-align: center;
   font-size: 40px;
   font-weight: 400;
+  padding: 10px 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .deliveryDetails > h1 {
+    padding: 0;
+
+  }
 }
