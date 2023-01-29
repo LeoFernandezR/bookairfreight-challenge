@@ -39,7 +39,6 @@
 }
 
 .deliveryRange {
-  font-size: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,6 +55,7 @@
 
 .deliveryRange > p {
   margin: 0;
+  font-size: 15px;
 }
 
 .deliveryRange > h3 {
@@ -89,7 +89,7 @@
   border-bottom: 1px solid black;
   width: 100%;
   height: 20%;
-  background-color: var(--dark-blue);
+  background-color: blue; /* Background not provided but set it to blue to match demo*/
   display: flex;
   align-items: center;
   justify-items: center;
