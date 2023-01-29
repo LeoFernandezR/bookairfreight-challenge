@@ -1,0 +1,13 @@
+:root {
+  --light-blue: #3898EC;
+  --dark-blue: #4129C7;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+
+.app {
+  margin: 20px /* Added margin to whole app in order to match demo */
+}

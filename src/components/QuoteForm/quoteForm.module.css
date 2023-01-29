@@ -1,0 +1,32 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form > div > label {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.form > div > input, .form > div > select {
+  display: block;
+}
+
+.form > button {
+  border: none;
+  border-radius: 3px; /* Added border radius to match demo */
+  width: fit-content; /* If i fixed it to 100px the text does not fit */
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: var(--light-blue);
+  color: #FFFFFF;
+  font-size: 14px; /* font size was not provided so i set it to 14px in order to get the button width approx to 100px */
+}
+
+/* Errors */
+.form > div > p {
+  color: red;
+  font-size: 13px;
+  margin: 0;
+}
